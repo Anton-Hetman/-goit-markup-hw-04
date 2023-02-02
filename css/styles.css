@@ -311,11 +311,42 @@ body {
 .socials-link:focus {
   background-color: var(--color-ocean);
 }
+.customers-section {
+  max-width: 1128px;
+  padding-top: 130px;
+  padding-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.customers-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02;
+  text-align: center;
+  margin-bottom: 72px;
+}
+.customers-list {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  gap: 24px;
+  width: 168px;
+  height: 88px;
+  align-items: center;
+}
 
+.customers-item {
+  border: 1px solid var(--color-helper-text);
+  border-radius: 4px;
+  padding: 16px 30px;
+}
 /*-----------------FOOTER----------------- */
 .footer {
   background-color: var(--color-primary);
   padding: 100px 0;
+  display: flex;
 }
 .logo-footer {
   margin: 0;
@@ -328,6 +359,11 @@ body {
   color: var(--color-accent);
   margin-top: 16px;
 }
+/* .footer-socials-link {
+  color: rgba(#fff, 0.1);
+  background-color: rgba(#fff 0.1);
+} */
+
 /* ----------------STUDIO------------------- */
 /* ---------------PORTFOLIO----------------- */
 .filter-section {
