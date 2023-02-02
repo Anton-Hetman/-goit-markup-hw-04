@@ -222,9 +222,14 @@ body {
   margin: 0;
   margin-bottom: 8px;
 }
-.advantages-strategy {
-  /* padding: 24px 100px; */
+.advantages-icon {
+  margin-bottom: 8px;
+  padding: 24px 100px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--color-invert);
 }
+
 .work-section {
   padding-bottom: 120px;
 }
@@ -283,6 +288,30 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
+.team-text {
+  margin-bottom: 8px;
+}
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-iris);
+  border-radius: 50%;
+  color: var(--color-invert);
+}
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--color-ocean);
+}
+
 /*-----------------FOOTER----------------- */
 .footer {
   background-color: var(--color-primary);
