@@ -8,6 +8,7 @@
   --color-ocean: #404bbf;
   --color-success: #31d0aa;
   --color-helper-text: #8e8f99;
+  --color-footer-icon: rgba(100%, 100%, 100%, 10%);
   /*-----------------FONT-FAMILY----------------- */
   --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'Raleway', sans-serif;
@@ -337,10 +338,23 @@ body {
   align-items: center;
 }
 
-.customers-item {
-  border: 1px solid var(--color-helper-text);
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-helper-text);
   border-radius: 4px;
   padding: 16px 30px;
+  width: 168px;
+  height: 88px;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border: 2px solid var(--color-ocean);
+  color: var(--color-ocean);
+}
+.customers-icon {
+  fill: currentColor;
 }
 /*-----------------FOOTER----------------- */
 .footer {
@@ -351,6 +365,15 @@ body {
 .logo-footer {
   margin: 0;
 }
+.footer {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-wrapper {
+  margin-left: 156px;
+  margin-right: 120px;
+}
 .footer-logo {
   color: var(--color-invert);
 }
@@ -359,11 +382,31 @@ body {
   color: var(--color-accent);
   margin-top: 16px;
 }
-/* .footer-socials-link {
+.footer-info {
+  display: flex;
+}
+.footer-social-text {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+  color: var(--color-light);
+  margin-bottom: 16px;
+}
+.footer-socials-list {
+  display: flex;
+  gap: 16px;
+  width: 208px;
+}
+.footer-socials-link {
   color: rgba(#fff, 0.1);
-  background-color: rgba(#fff 0.1);
-} */
-
+  background-color: var(--color-footer-icon);
+}
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--color-success);
+}
 /* ----------------STUDIO------------------- */
 /* ---------------PORTFOLIO----------------- */
 .filter-section {
@@ -392,6 +435,7 @@ body {
 .filter-button:focus {
   background-color: var(--color-ocean);
   color: var(--color-light);
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 2px 1px 0px #00000014, 0px 3px 1px 0px #0000001a;
 }
 .portfolio-title {
   max-width: 360px;
@@ -413,4 +457,7 @@ body {
   padding-left: 16px;
   border: 1px solid var(--color-accent);
   border-top: none;
+}
+.portfolio-item {
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
 }
